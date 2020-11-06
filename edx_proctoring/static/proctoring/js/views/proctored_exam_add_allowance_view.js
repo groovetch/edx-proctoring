@@ -18,7 +18,7 @@ edx = edx || {};
             this.model = new edx.instructor_dashboard.proctoring.ProctoredExamAllowanceModel();
             _.bindAll(this, 'render');
             this.loadTemplateData();
-            // Backbone.Validation.bind( this,  {valid:this.hideError, invalid:this.showError});
+            Backbone.Validation.bind( this,  {valid:this.hideError, invalid:this.showError});
         },
         events: {
             'submit form': 'addAllowance',

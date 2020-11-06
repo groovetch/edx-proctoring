@@ -247,7 +247,7 @@ Backbone.ModalView =
 
                 modalContainer.css({
                     "opacity": 0,
-                    "position": "absolute",
+                    // "position": "absolute", # visible Add allowance button.
                     "z-index": 999999});
 
                 var offsets = this.getOffsets();
