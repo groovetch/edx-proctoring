@@ -69,6 +69,7 @@ Backbone.ModalView =
                         $("<div id='modalContainer' class='proctor-modal'>")
                             .css({
                                 "z-index": "99999",
+                                // "position": "relative", # visible Add allowance button.
                                 "-webkit-border-radius": "6px",
                                 "-moz-border-radius": "6px",
                                 "border-radius": "6px"
