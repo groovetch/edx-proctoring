@@ -66,10 +66,9 @@ Backbone.ModalView =
 
                 if (this.modalContainer == null) {
                     this.modalContainer =
-                        $("<div id='modalContainer'>")
+                        $("<div id='modalContainer' class='proctor-modal'>")
                             .css({
                                 "z-index": "99999",
-                                "position": "relative",
                                 "-webkit-border-radius": "6px",
                                 "-moz-border-radius": "6px",
                                 "border-radius": "6px"
@@ -247,7 +246,6 @@ Backbone.ModalView =
 
                 modalContainer.css({
                     "opacity": 0,
-                    "position": "absolute",
                     "z-index": 999999});
 
                 var offsets = this.getOffsets();
